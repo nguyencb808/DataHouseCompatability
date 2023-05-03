@@ -70,7 +70,7 @@ for member in applicants:
     totalScore += (member['objective']['interest']/5)*.15
     
     #adds a score weighted by .2 by looking at PI test's results
-    totalScore += (member['objective']['PI_Score']/450)*.2
+    totalScore += ((member['objective']['PI_Score']-100)/350)*.2
 
     #adds a score weighted by .15 by looking to see how well applicant covers weakest team attribute  
     totalScore += (member['subjective'][lowest_name]/10)*.15
